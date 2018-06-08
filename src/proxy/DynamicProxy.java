@@ -1,3 +1,5 @@
+package proxy;
+
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
@@ -14,7 +16,7 @@ interface Subject {
  */
 class RealSubject implements Subject {
     public void request() {
-        System.out.println("====RealSubject Request====");
+        System.out.println("====proxy.RealSubject Request====");
     }
 }
 
