@@ -4,7 +4,7 @@
 ## UML类图（IDEA）
 ![image](pic/duck.png)
 ## 测试
-测试程序为`package strategy.src.Main`
+测试程序为`strategy.src.Main`
 ```java
 public class Main {
 
