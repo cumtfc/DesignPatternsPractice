@@ -1,45 +1,41 @@
 package strategy;
 
-import com.sun.istack.internal.NotNull;
-
 /**
  * @author 冯楚
  * @date 2018/6/8-19:12
  */
-abstract class Duck {
-
-    private FlyBehavior flyBehavior;
-
-    private QuackBehavior quackBehavior;
+public interface Duck {
 
     /**
      * 飞行方法
      */
-    public void fly() {
-        flyBehavior.perform();
-    }
+    void fly();
 
     /**
      * 叫的方法
      */
-    public void quack() {
-        quackBehavior.perform();
-    }
+    void quack();
 
     /**
-     * 展示方法，输出自己是什么鸭子
+     * 展示方法
      */
-    public abstract void display();
+    void display();
 
-    public void swim() {
-        System.out.println("I`am swimming!");
-    }
+    /**
+     * 游泳方法
+     */
+    void swim();
 
-    public void setFlyBehavior(FlyBehavior flyBehavior) {
-        this.flyBehavior = flyBehavior;
-    }
+    /**
+     * 设置飞行行为
+     * @param flyBehavior FlyBehavior接口实现类
+     */
+    void setFlyBehavior(FlyBehavior flyBehavior);
 
-    public void setQuackBehavior(QuackBehavior quackBehavior) {
-        this.quackBehavior = quackBehavior;
-    }
+    /**
+     * 设置叫的行为
+     * @param quackBehavior QuackBehavior接口实现类
+     */
+    void setQuackBehavior(QuackBehavior quackBehavior);
+
 }
