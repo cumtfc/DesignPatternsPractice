@@ -1,13 +1,13 @@
-package strategy;
+package strategy.src;
 
 /**
  * @author 冯楚
  * @date 2018/6/8-19:12
  */
-public class MallardDuck extends AbstractDuck {
+public class RedheadDuck extends AbstractDuck {
 
-    public MallardDuck() {
-        super(new FlyWithWings(), new Quack());
+    public RedheadDuck() {
+        super(new FlyNoWay(),new Squack());
     }
 
     /**
@@ -15,7 +15,7 @@ public class MallardDuck extends AbstractDuck {
      */
     @Override
     public void display() {
-        System.out.println("I`m a mallardDuck.");
+        System.out.println("I`m a redheadDuck.");
         super.display();
     }
 }

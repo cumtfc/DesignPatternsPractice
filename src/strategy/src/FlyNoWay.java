@@ -1,16 +1,16 @@
-package strategy;
+package strategy.src;
 
 /**
  * @author 冯楚
  * @date 2018/6/8-19:12
  */
-public class FlyWithRocket implements FlyBehavior {
+public class FlyNoWay implements FlyBehavior {
 
     /**
      * 飞行方法
      */
     @Override
     public void perform() {
-        System.out.println("喷射");
+        System.out.println("I cannot fly!!!");
     }
 }
