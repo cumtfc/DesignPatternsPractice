@@ -4,7 +4,7 @@ package strategy.src;
  * @author 冯楚
  * @date 2018/6/8-19:12
  */
-public abstract class AbstractDuck implements Duck{
+public abstract class AbstractDuck implements Duck {
 
     private FlyBehavior flyBehavior;
 
@@ -35,7 +35,8 @@ public abstract class AbstractDuck implements Duck{
      * 展示方法，输出自己是什么鸭子
      */
     @Override
-    public void display(){
+    public void display() {
+        System.out.println("I`m a/an " + this.getClass().getSimpleName());
         System.out.print("Trying to fly:");
         fly();
         System.out.print("Trying to quack:");
